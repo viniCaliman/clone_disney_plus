@@ -1,6 +1,7 @@
 @use 'config/variables.scss';
 @use 'hero';
 @use 'shows';
+@use 'plans';
 
 @font-face {
     font-family: Avenir;
@@ -58,8 +59,23 @@ body {
         @include title();
     }
 }
+
 .link-text {
     @include text(18px);
     color: variables.$fColorSecondary;
     text-decoration: underline;
+}
+
+.button {
+    display: block;
+    width: 100%;
+    height: 60px;
+    font-size: 18px;
+    color: variables.$fColorSecondary;
+    background-color: #6421ff;
+    text-transform: uppercase;
+    border-radius: 4px;
+    margin: 2vw 0 8px;
+    border: none;
+    cursor: pointer;
 }
